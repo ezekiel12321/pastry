@@ -1,3 +1,9 @@
-rice.BroadAggTime@instance:20230808.180452.564:
-Node ID: <0x175091..>
+rice.BroadAggTime@instance:20230809.160347.334:
+Node ID: <0x848DDC..>
+======================================================
+rice.BroadAggTime:20230809.160426.996:
+Node: 848DDC18B775B05CA8D77FAEA9A3CE98C012AE39 received BroadcastContent "null" from the root at 1691622266996
+======================================================
+rice.BroadAggTime:20230809.160426.996:
+Node: 848DDC18B775B05CA8D77FAEA9A3CE98C012AE39 sends UpdateContent "JSSC [[848DDC18B775B05CA8D77FAEA9A3CE98C012AE39]]" to parent node: [SNH: <0xF73A37..>//127.0.0.1:8001] at 1691622266996
 ======================================================

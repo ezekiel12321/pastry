@@ -40,7 +40,6 @@ advised of the possibility of such damage.
 package rice.environment.logging.file;
 
 import java.io.*;
-import java.io.PrintStream;
 
 import rice.environment.logging.LogManager;
 import rice.environment.logging.simple.SimpleLogManager;
@@ -119,14 +118,19 @@ public class FileLogManager extends SimpleLogManager {
   private static PrintStream getPrintStream(String filePrefix, String detail, String fileSuffix, boolean append) {
     PrintStream newPS = System.out;
     try {
-      String fname = "LOGS/"+filePrefix+detail+fileSuffix;
-      newPS = new PrintStream(new FileOutputStream(fname,append));
+      String dirName = "LOGS";
+      File directory = new File(dirName);
+      if (!directory.exists()) {
+          directory.mkdir(); // Create the directory if it doesn't exist
+      }
+      String fname = dirName + "/" + filePrefix + detail + fileSuffix;
+      newPS = new PrintStream(new FileOutputStream(fname, append));
     } catch (IOException ioe) {
       throw new RuntimeException(ioe); 
-//      ioe.printStackTrace(newPS);
     }
     return newPS;
-  }
+}
+
   
   public LogManager clone(String detail) {
     PrintStream newPS = this.ps;
