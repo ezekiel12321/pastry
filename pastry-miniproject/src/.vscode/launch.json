@@ -1,0 +1,782 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BroadAggSimulator",
+            "request": "launch",
+            "mainClass": "rice.BroadAggTime.BroadAggSimulator",
+            "projectName": "src_86ccc79b"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLGNNSimulator",
+            "request": "launch",
+            "mainClass": "rice.FLGNN.FLGNNSimulator",
+            "projectName": "src_aeaf113f",
+            "args": "-nodes 2 -protocol socket -bootstrap 127.0.1.1 -bootport 8000 -port 8000 -killnodes 0 -global_epoches 100"
+        },
+        {
+            "type": "java",
+            "name": "Launch BroadAggSimulator",
+            "request": "launch",
+            "mainClass": "rice.BroadAggTime.BroadAggSimulator",
+            "projectName": "src_aeaf113f",
+            "args": "-nodes 10 -protocol socket -bootstrap 127.0.1.1 -bootport 8001 -port 8001 -killnodes 0 -modelsize 200KB"
+        },
+        {
+            "type": "java",
+            "name": "Launch MP2Simulator",
+            "request": "launch",
+            "mainClass": "rice.miniproject_2.MP2Simulator",
+            "projectName": "src_aeaf113f",
+            "args": "-nodes 30 -protocol pastry -bootstrap 127.0.1.1 -port 8000 -printtree 1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BanditSimulator",
+            "request": "launch",
+            "mainClass": "rice.BanditRouting.BanditSimulator",
+            "projectName": "src_aeaf113f",
+            "args": "-nodes 50 -protocol socket -bootstrap 127.0.1.1 -port 8000 -printtree 1 -latency 5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CAToolImpl",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.pki.x509.CAToolImpl",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch EncryptedFileTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.filetransfer.EncryptedFileTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProfileFileTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.filetransfer.ProfileFileTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LoadStore",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.pki.x509.LoadStore",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch BandwidthMeasuringTLTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.BandwidthMeasuringTLTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MagicNumberTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.MagicNumberTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RapidRebind",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.RapidRebind",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SSLTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.SSLTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SSLTest2",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.SSLTest2",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SSLTestNoClientAuth",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.SSLTestNoClientAuth",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestNodeHandleFetcher",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.TestNodeHandleFetcher",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch AuthenticatorStoreTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.AuthenticatorStoreTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogSnippitTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.LogSnippitTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PRInconsistent1",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.PRInconsistent1",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PRNonconform1",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.PRNonconform1",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PRNonconform2",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.PRNonconform2",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PRRegressionTest",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.peerreview.PRRegressionTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recorder",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.replay.Recorder",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Replayer",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.testing.transportlayer.replay.Replayer",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch BasicEntryDeserializer",
+            "request": "launch",
+            "mainClass": "org.mpisws.p2p.transport.peerreview.replay.BasicEntryDeserializer",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleProcessor",
+            "request": "launch",
+            "mainClass": "rice.environment.processing.simple.SimpleProcessor",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch FailSimulator",
+            "request": "launch",
+            "mainClass": "rice.failurerecovery.FailSimulator",
+            "projectName": "src_aeaf113f",
+            "args": "-nodes 20 -protocol socket -bootstrap 127.0.1.1 -bootport 9000 -port 9000 -killnodes 2"
+        },
+        {
+            "type": "java",
+            "name": "Launch FailSimulator(1)",
+            "request": "launch",
+            "mainClass": "rice.failurerecoveryTopic.FailSimulator",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimAggSimulator",
+            "request": "launch",
+            "mainClass": "rice.miniproject.SimAggSimulator",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RingCertificate",
+            "request": "launch",
+            "mainClass": "rice.p2p.multiring.RingCertificate",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultiringRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.multiring.testing.MultiringRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistPastTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.past.testing.DistPastTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PastRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.past.testing.PastRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RawPastRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.past.testing.RawPastRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReplicationManagerRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.replication.manager.testing.ReplicationManagerRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReplicationRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.replication.testing.ReplicationRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RawScribeRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.scribe.testing.RawScribeRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScribeRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.scribe.testing.ScribeRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStreamDistTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.splitstream.testing.SplitStreamDistTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStreamRegrTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.splitstream.testing.SplitStreamRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch BloomFilter",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.BloomFilter",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch BloomFilterUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.BloomFilterUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch EncryptedStreamUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.EncryptedStreamUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch IdBloomFilterReplicationTest",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.IdBloomFilterReplicationTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch IdBloomFilterUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.IdBloomFilterUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MathUtilsUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.MathUtilsUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RedBlackMapUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.RedBlackMapUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SecurityUtilsUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.SecurityUtilsUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringCacheUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.StringCacheUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSortedLinkedList",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.TestSortedLinkedList",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch XMLObjectStreamUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.XMLObjectStreamUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch XMLParserUnit",
+            "request": "launch",
+            "mainClass": "rice.p2p.util.testing.XMLParserUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Id",
+            "request": "launch",
+            "mainClass": "rice.pastry.Id",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SphereNetworkProximityGenerator",
+            "request": "launch",
+            "mainClass": "rice.pastry.direct.proximitygenerators.SphereNetworkProximityGenerator",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.leafset.testing.MergeTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch CertifiedNodeIdFactory",
+            "request": "launch",
+            "mainClass": "rice.pastry.standard.CertifiedNodeIdFactory",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch StandardAddress",
+            "request": "launch",
+            "mainClass": "rice.pastry.standard.StandardAddress",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClosestRegrTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.ClosestRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DirectPastryPingTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.DirectPastryPingTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DirectPastryRegrTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.DirectPastryRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistHelloWorld",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.DistHelloWorld",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistPastryRegrTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.DistPastryRegrTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.HelloWorld",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch IdRangeUnit",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.IdRangeUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch IdUnit",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.IdUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeafSetTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.LeafSetTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemoryTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.MemoryTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeIdUnit",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.NodeIdUnit",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartitionChecker",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.PartitionChecker",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartitionHandlerTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.PartitionHandlerTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PastryNetworkTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.PastryNetworkTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PastryTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.PastryTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RoutingTableTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.RoutingTableTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorialStall",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.deadforever.DistTutorialStall",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.rendezvous.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorialInternet",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.rendezvous.DistTutorialInternet",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch RendezvousScribeTest",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.rendezvous.RendezvousScribeTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch VerifyConnectivity",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.rendezvous.VerifyConnectivity",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhatIsMyIP",
+            "request": "launch",
+            "mainClass": "rice.pastry.testing.rendezvous.WhatIsMyIP",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch GlacierPersistentStorageTest",
+            "request": "launch",
+            "mainClass": "rice.persistence.testing.GlacierPersistentStorageTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LRUCacheTest",
+            "request": "launch",
+            "mainClass": "rice.persistence.testing.LRUCacheTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch MemoryStorageTest",
+            "request": "launch",
+            "mainClass": "rice.persistence.testing.MemoryStorageTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PersistentStorageTest",
+            "request": "launch",
+            "mainClass": "rice.persistence.testing.PersistentStorageTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectorManager",
+            "request": "launch",
+            "mainClass": "rice.selector.SelectorManager",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectorTest",
+            "request": "launch",
+            "mainClass": "rice.selector.testing.SelectorTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tutorial",
+            "request": "launch",
+            "mainClass": "rice.tutorial.appsocket.Tutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DirectTutorial",
+            "request": "launch",
+            "mainClass": "rice.tutorial.deterministicsimulator.DirectTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DirectTutorial(1)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.direct.DirectTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(1)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.forwarding.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DirectTutorial(2)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.gtitm.DirectTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestContinuation",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lesson0a.TestContinuation",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestContinuationAnon",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lesson0a.TestContinuationAnon",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(2)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lesson1.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(3)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lesson3.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(4)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lesson4.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch LookupServiceTest",
+            "request": "launch",
+            "mainClass": "rice.tutorial.lookup.LookupServiceTest",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch PastTutorial",
+            "request": "launch",
+            "mainClass": "rice.tutorial.past.PastTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(5)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.prioritylistener.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(6)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.rawserialization.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(7)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.rawserialization2.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tutorial(1)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.remotesocket.Tutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tutorial2",
+            "request": "launch",
+            "mainClass": "rice.tutorial.remotesocket.Tutorial2",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScribeTutorial",
+            "request": "launch",
+            "mainClass": "rice.tutorial.scribe.ScribeTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tutorial(2)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.sendfile.Tutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStreamTutorial",
+            "request": "launch",
+            "mainClass": "rice.tutorial.splitstream.SplitStreamTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(8)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.ssl.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(9)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.timer.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(10)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.transportdirect.DistTutorial",
+            "projectName": "src_aeaf113f"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistTutorial(11)",
+            "request": "launch",
+            "mainClass": "rice.tutorial.transportlayer.DistTutorial",
+            "projectName": "src_aeaf113f"
+        }
+    ]
+}
