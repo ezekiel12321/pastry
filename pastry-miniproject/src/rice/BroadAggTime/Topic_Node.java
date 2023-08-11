@@ -50,4 +50,8 @@ public class Topic_Node {
     public Topic getTopic() {
         return topic;
     }
+
+    public String toString() {
+        return children.toString();
+    }
 }

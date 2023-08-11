@@ -66,7 +66,7 @@ public class MiniProjectClient implements ScribeClient {
     
     
     /**
-     * Written by Ezekiel for subTopic freature
+     * Written by Ezekiel for subTopic feature
      */
     public void testSubTopic(Topic prev) {
         getScribeImpl().subLink(prev, this.topic);

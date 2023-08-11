@@ -753,14 +753,12 @@ public class ScribeImpl implements Scribe, MaintainableScribe, Application, Obse
    * @return True / False depending on if exception occurs
    */
   public void subLink(Topic parentTopic, Topic subTopic ) {
-    TopicManager tpManager = this.getTopicManager(subTopic);
+    
     Collection<ScribeMultiClient> mltiClient_c = getClientsByTopic(subTopic);
     ArrayList<ScribeMultiClient> arrayList = new ArrayList<ScribeMultiClient>(mltiClient_c);
     for (ScribeMultiClient client : arrayList) {
       subscribe(parentTopic, client); //subscribing the subTopic's clients to the parent  
     }
-    
-    
     //if the topic -> topic node is in our hashtable
     if (this.topicNodeMap.containsKey(parentTopic)) {
       //Retrieve from the hashmap
@@ -771,10 +769,11 @@ public class ScribeImpl implements Scribe, MaintainableScribe, Application, Obse
       //If the topic -> topic_node is not in our hashtable
       Topic_Node parent_new_node = new Topic_Node(parentTopic);
       parent_new_node.addChild(subTopic);
-      
+
       //Help fill out the hashtable
       this.topicNodeMap.put(parentTopic, parent_new_node);
     }
+    System.out.println(parentTopic.toString() + subTopic.toString());
     
     
     

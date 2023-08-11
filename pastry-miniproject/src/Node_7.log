@@ -1,9 +1,63 @@
-rice.BroadAggTime@instance:20230809.160346.555:
-Node ID: <0x2D7D6F..>
+rice.BroadAggTime@instance:20230810.194203.803:
+Node ID: <0x0A49FF..>
 ======================================================
-rice.BroadAggTime:20230809.160426.991:
-Node: 2D7D6F1338BB2F7F3744CEF2E7FF54DDBD9E8E2D received BroadcastContent "null" from the root at 1691622266991
+rice.BroadAggTime:20230810.194244.206:
+Publish BroadcastMessage to child nodes for topic [TOPIC <0x023482..>] at 1691721764206
 ======================================================
-rice.BroadAggTime:20230809.160426.992:
-Node: 2D7D6F1338BB2F7F3744CEF2E7FF54DDBD9E8E2D sends UpdateContent "JSSC [[2D7D6F1338BB2F7F3744CEF2E7FF54DDBD9E8E2D]]" to parent node: [SNH: <0xF73A37..>//127.0.0.1:8001] at 1691622266992
+rice.BroadAggTime@instance:20230810.194244.218:
+Root sent broadcast message at 1691721764217
+======================================================
+rice.BroadAggTime@instance:20230810.194244.248:
+Node: <0x0A49FF..> received UpdateMessage "[2D8DF2916E0F5D41980DCC581168AB44C185E664]" from child node <0x2D8DF2..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.249:
+Root received 2 ids at 1691721764248
+======================================================
+rice.BroadAggTime@instance:20230810.194244.250:
+Node: <0x0A49FF..> received UpdateMessage "[C0A09144B3637FB3FFA04DA86E7D95DBB0A23740]" from child node <0xC0A091..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.250:
+Root received 3 ids at 1691721764250
+======================================================
+rice.BroadAggTime@instance:20230810.194244.251:
+Node: <0x0A49FF..> received UpdateMessage "[E55D1A0FBA007A59B68B46F2D87CEC011B8A3BB5]" from child node <0xE55D1A..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.251:
+Root received 4 ids at 1691721764251
+======================================================
+rice.BroadAggTime@instance:20230810.194244.252:
+Node: <0x0A49FF..> received UpdateMessage "[DDB2915709FDEF5F0A8118F832CE6FB3E44C0C22]" from child node <0xDDB291..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.252:
+Root received 5 ids at 1691721764252
+======================================================
+rice.BroadAggTime@instance:20230810.194244.252:
+Node: <0x0A49FF..> received UpdateMessage "[B7E43DC9C3D9239F0C712A977D5C110E16A774CD]" from child node <0xB7E43D..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.252:
+Root received 6 ids at 1691721764252
+======================================================
+rice.BroadAggTime@instance:20230810.194244.253:
+Node: <0x0A49FF..> received UpdateMessage "[594F58DBF5C1956E68DCE6D39B390F2DE2EAD9E5]" from child node <0x594F58..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.254:
+Root received 7 ids at 1691721764254
+======================================================
+rice.BroadAggTime@instance:20230810.194244.254:
+Node: <0x0A49FF..> received UpdateMessage "[F386A60A00E26A3ECB54AA94F96ED92DA7BDDD29]" from child node <0xF386A6..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.254:
+Root received 8 ids at 1691721764254
+======================================================
+rice.BroadAggTime@instance:20230810.194244.255:
+Node: <0x0A49FF..> received UpdateMessage "[61B72DA326FA90C7B7788BF79E88F244E9D6D4BE]" from child node <0x61B72D..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.255:
+Root received 9 ids at 1691721764255
+======================================================
+rice.BroadAggTime@instance:20230810.194244.255:
+Node: <0x0A49FF..> received UpdateMessage "[C99319ACCC4F31E886AD201C81376970435D4CE0]" from child node <0xC99319..> for topic [TOPIC <0x023482..>]
+======================================================
+rice.BroadAggTime:20230810.194244.256:
+Root received 10 ids at 1691721764256
 ======================================================

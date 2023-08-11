@@ -287,15 +287,18 @@ public abstract class CommonAPITest {
     System.out.println(NUM_NODES+" nodes created and start subscribing.");
     if (simulator != null) simulator.setFullSpeed();
   }
-
+    
+    /**
+     * Ezekiel modified this
+     */
     public void getSubscribe() {
         for(int i = 0; i< apps.size(); i++) {
           ((MiniProjectClient) apps.get(i)).subscribe();
-          if (i > 0) {
-            Topic prev = ((MiniProjectClient) apps.get(i - 1)).getTopic();
-            ((MiniProjectClient) apps.get(i)).testSubTopic(prev);
+        
+          Topic prev = new Topic(new PastryIdFactory(environment), "SimpleAggr" + String.valueOf(i));
+          ((MiniProjectClient) apps.get(i)).testSubTopic(prev);
 
-          }
+          
           
           
             
